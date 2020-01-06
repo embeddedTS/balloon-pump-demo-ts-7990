@@ -45,14 +45,18 @@ There are three status indications:
 TS-TPC-7990 Setup Instructions
 
 1.) Copy the balloon-pump-demo-ts-7990 binary to /home/root 
-2.) Modify /usr/bin/mini-x-session:
+2.) Export DISPLAY environment variable:
+
+    export DISPLAY=:0
+
+3.) Modify /usr/bin/mini-x-session:
 
     /home/root/balloon-pump-demo-ts-7990&
     exec matchbox-window-manager -use_titlebar no -use_cursor no
 
-3.) Restart using shutdown -r now
+4.) Restart using shutdown -r now
 
-4.) You should now be looking at a kiosk style screen with the Qt
+5.) You should now be looking at a kiosk style screen with the Qt
 application.
 
 Versions:
