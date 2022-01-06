@@ -65,6 +65,6 @@ Versions:
    Based on Qt 5.9.5
 
 Sources:
-   https://wiki.embeddedarm.com/wiki/TS-TPC-7990#Configure_Qt_Creator_IDE
+   https://wiki.embeddedTS.com/wiki/TS-TPC-7990#Configure_Qt_Creator_IDE
 
 
