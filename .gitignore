@@ -1,0 +1,4 @@
+/Makefile
+.qmake.stash
+*.o
+/balloon-pump-demo-ts-7990
