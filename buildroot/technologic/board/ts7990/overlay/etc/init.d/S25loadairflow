@@ -1,0 +1,21 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		modprobe sfxx
+		echo sfxx 0x40 > /sys/bus/i2c/devices/i2c-1/new_device
+		# Perform one read since first read is invalid according to
+		# datasheets.
+		cat /sys/bus/i2c/devices/i2c-1/1-0040/measured_value > /dev/null 2>&1
+		exit 0
+		;;
+	stop)
+		echo 0x40 > /sys/bus/i2c/devices/i2c-1/delete_device
+		exit 0
+		;;
+	*)
+		echo "Usage: $0 {start|stop}" >&2
+		exit 1
+		;;
+esac
+
