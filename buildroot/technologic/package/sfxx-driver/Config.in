@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SFXX_DRIVER
+	bool "Sensirion sfxx kernel module"
+	depends on BR2_LINUX_KERNEL
+	help
+	  External module from Sensirion to support their SF04 and
+	  SF05 I2C airflow sensors.
+
+	  https://github.com/Sensirion/sfxx
