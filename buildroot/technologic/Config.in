@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL_TS7990_BALLOON_PATH/package/balloon-pump-demo-ts-7990/Config.in"
+source "$BR2_EXTERNAL_TS7990_BALLOON_PATH/package/sfxx-driver/Config.in"

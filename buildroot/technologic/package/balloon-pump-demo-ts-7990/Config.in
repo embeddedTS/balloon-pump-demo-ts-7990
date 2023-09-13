@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BALLOON_PUMP_DEMO_TS_7990
+	bool "ts7990-balloon-demo"
+	help
+	  Balloon control demo for TS-TPC-7990
